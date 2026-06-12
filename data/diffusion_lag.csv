@@ -1,0 +1,13 @@
+field,short,tier,peak_year,lag_from_2005,peak_dlpn
+network_science,Network science,3,2005,0,0.0000
+dynamical_systems,Dynamical systems,2,2012,7,0.0674
+complex_systems,Complex systems,2,2012,7,0.4285
+statistical_mechanics,Stat. mechanics,3,2012,7,0.5579
+information_theory,Info. theory,3,2012,7,0.5813
+self_org_criticality,SOC,3,2015,10,0.6664
+computer_science,Computer sci.,1,2018,13,0.1240
+stochastic_process,Stochastic proc.,2,2018,13,0.3633
+mathematics,Mathematics,1,2019,14,0.0237
+condensed_matter,Condensed matter,1,2019,14,0.4830
+phase_transition,Phase transition,2,2019,14,0.4459
+econophysics,Econophysics,3,2023,18,0.5291
