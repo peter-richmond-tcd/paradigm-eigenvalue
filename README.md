@@ -90,17 +90,21 @@ of each script.
 python code/fetch_year.py
 ```
 
-This retrieves the raw JSON files from the OpenAlex API, one file
-per field per year. The raw corpus (approximately 2.85 million
-paper-years) is not included in this repository due to its size,
-but it is freely available from https://openalex.org under a CC0
-licence. The script uses cursor-based pagination with polite-pool
-rate limiting; full retrieval takes several hours.
+Edit the `TARGET_YEAR` variable near the top of `fetch_year.py`
+and run the script once for each year from 2005 to 2023:
 
-Configuration: set your email address in the `MAILTO` variable
-inside `fetch_year.py` to use the OpenAlex polite pool and avoid
-rate limiting.
+    python code/fetch_year.py   # with TARGET_YEAR = 2005
+    python code/fetch_year.py   # with TARGET_YEAR = 2006
+    # ... repeat through 2023
 
+Each run takes 1–3 hours. Files already successfully downloaded
+are skipped automatically, so the script can be safely interrupted
+and restarted. Set your email address in the `EMAIL` variable
+to use the OpenAlex polite pool and avoid rate limiting.
+
+The raw corpus is not included in this repository due to its size
+(~2.85 million paper-years). The data are freely available from
+https://openalex.org under a CC0 licence.
 ### Stage 2: Global eigenvalue analysis
 
 ```bash
